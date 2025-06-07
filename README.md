@@ -52,6 +52,14 @@ Tools: Power BI, DAX, SQL
 
 ## 5. DAX/Logic Notes
 
+UniqueActive_NonAdopters = CALCULATE(
+    DISTINCTCOUNT(user_weekly[user_id]),
+    user_weekly[active] = 1,
+    user_weekly[adopter_group] = "non_adopter"
+)
+
+
+
 ## 6. Insights & Visuals
 In the weeks following the Feb 20 feature launch, nearly 45% of the user base adopted at least one of the three new features, with adoption volume being relatively balanced across Task Reminder, Voice Assistant, and Custom Themes. Interestingly, users who adopted early were already highly active before launch, highlighting the value of targeting this segment for early rollouts. These adopters showed higher retention across six weeks, better subscription stability, and a greater likelihood to upgrade their plans. Non-adopters, on the other hand, had a higher rate of non-renewals, a potential churn signal.
 
