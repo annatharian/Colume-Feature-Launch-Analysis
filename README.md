@@ -6,14 +6,16 @@ Analyst: Anna Susan Anil
 
 ## 1. Overview
 Purpose of the Analysis:
+
 Evaluate how the Feb 20 feature launch impacted user retention, system performance, and user sentiment.
 
 ### Business Context:
 Colume launched 3 new features aimed at boosting engagement. 
+
 New Features Launched:
-Task Reminders
-Voice Assistant
-Custom Themes
+* Task Reminders
+* Voice Assistant
+* Custom Themes
 
 ### Stakeholders needed clarity on:
 Retention lift from these features
@@ -25,6 +27,7 @@ Product Team, Engineering, Operations, CX
 
 ## 2. Business Objectives
 2.1 Understand the Impact of New Feature Adoption on User Retention and Behavior
+
 2.2 Evaluate how the new features launched on Feb 20, 2025, impacted system performance, user satisfaction, and support volume.
 
 ## 3. Key Questions
