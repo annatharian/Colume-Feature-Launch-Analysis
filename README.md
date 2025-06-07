@@ -29,14 +29,16 @@ Product Team, Engineering, Operations, CX
 
 ## 3. Key Questions
 Retention:
-Are adopters retained better than non-adopters?
-Which features correlate with the best retention?
+* Are adopters retained better than non-adopters?
+* Which features correlate with the best retention?
+  
 System Performance:
-Did CPU/memory usage spike after launch?
-Was there a dip in response time?
+* Did CPU/memory usage spike after launch?
+* Was there a dip in response time?
+  
 Support/User Sentiment:
-Did high-priority tickets increase?
-Was feedback mostly positive, negative, or neutral?
+* Did high-priority tickets increase?
+* Was feedback mostly positive, negative, or neutral?
 
 ## 4. Methodology
 Datasets used:
@@ -53,11 +55,11 @@ In the weeks following the Feb 20 feature launch, nearly 45% of the user base ad
 While system performance scaled well post-launch (CPU usage rose but memory and response time remained stable), user sentiment was mixed. Positive feedback stood at 40.1%, while negative was close behind at 39.2%. Custom Themes received the most critical feedback and drove the highest support volume, especially in medium-priority tickets. Overall, support tickets rose significantly, with high-priority ones jumping 185%. Despite this, average post-launch feature rating held at 3.02, and engagement metrics like request volume and active users trended upward. This suggests that the features sparked strong engagement, even as they surfaced some usability gaps worth refining.
 
 ## 7. Limitations
-Retention window limited to 6 weeks
-Feedback volume could be biased toward active users
-No control group for performance benchmarking
+* Retention window limited to 6 weeks
+* Feedback volume could be biased toward active users
+* No control group for performance benchmarking
 
 ## 8. Recommendations
-Scale infrastructure if launching multiple features simultaneously
-Prioritize support readiness for visual-heavy features like Custom Themes
-Consider A/B testing for future launches to isolate impact
+* Scale infrastructure if launching multiple features simultaneously
+* Prioritize support readiness for visual-heavy features like Custom Themes
+* Consider A/B testing for future launches to isolate impact
