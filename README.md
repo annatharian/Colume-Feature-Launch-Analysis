@@ -44,12 +44,27 @@ Support/User Sentiment:
 * Was feedback mostly positive, negative, or neutral?
 
 ## 4. Methodology
-Used the BAIIR Framework. 
+I followed the **BAIIR framework** (Business Objective, Acquisition, Investigation, Insight, Recommendation) to guide the analysis.
 
-Key filtering steps:
- users active post-Feb 20, excluding last row dip
- 
-Tools: Power BI, DAX, SQL
+### Data Cleaning (SQL)
+
+- Removed null or empty values from key fields like user_id, timestamp, and feature_area.
+- Standardized date formats across tables for consistency.
+- Added a derived column to label each record as 'Before' or 'After' the feature launch (Feb 20, 2025).
+- Cleaned and normalized text fields (e.g., feature names and sentiment tags).
+- Filtered out known incomplete rows at the end of the dataset to avoid skewed charts.
+
+### Data Analysis (SQL + Power BI)
+
+Analysis was primarily performed in SQL, with Power BI used for visual storytelling and KPI tracking.
+
+- Segmented users into adopters (used any new feature post-launch) and non-adopters.
+- Calculated weekly retention, adoption rates, and user activity trends.
+- Aggregated support ticket volumes by priority and feature area.
+- Classified user feedback into sentiment buckets (positive, neutral, negative).
+- Linked feature usage with subscription outcomes (upgrades, downgrades, non-renewals).
+
+Tools: Power BI, DAX, SQL, Microsoft SSMS
 
 ## 5. Insights & Visuals
 In the weeks following the Feb 20 feature launch, nearly 45% of the user base adopted at least one of the three new features, with adoption volume being relatively balanced across Task Reminder, Voice Assistant, and Custom Themes. Interestingly, users who adopted early were already highly active before launch, highlighting the value of targeting this segment for early rollouts. These adopters showed higher retention across six weeks, better subscription stability, and a greater likelihood to upgrade their plans. Non-adopters, on the other hand, had a higher rate of non-renewals, a potential churn signal.
