@@ -44,33 +44,24 @@ Support/User Sentiment:
 * Was feedback mostly positive, negative, or neutral?
 
 ## 4. Methodology
-Datasets used:
+Used the BAIIR Framework. 
 
 Key filtering steps:
  users active post-Feb 20, excluding last row dip
+ 
 Tools: Power BI, DAX, SQL
 
-## 5. DAX/Logic Notes
-
-UniqueActive_NonAdopters = CALCULATE(
-    DISTINCTCOUNT(user_weekly[user_id]),
-    user_weekly[active] = 1,
-    user_weekly[adopter_group] = "non_adopter"
-)
-
-
-
-## 6. Insights & Visuals
+## 5. Insights & Visuals
 In the weeks following the Feb 20 feature launch, nearly 45% of the user base adopted at least one of the three new features, with adoption volume being relatively balanced across Task Reminder, Voice Assistant, and Custom Themes. Interestingly, users who adopted early were already highly active before launch, highlighting the value of targeting this segment for early rollouts. These adopters showed higher retention across six weeks, better subscription stability, and a greater likelihood to upgrade their plans. Non-adopters, on the other hand, had a higher rate of non-renewals, a potential churn signal.
 
 While system performance scaled well post-launch (CPU usage rose but memory and response time remained stable), user sentiment was mixed. Positive feedback stood at 40.1%, while negative was close behind at 39.2%. Custom Themes received the most critical feedback and drove the highest support volume, especially in medium-priority tickets. Overall, support tickets rose significantly, with high-priority ones jumping 185%. Despite this, average post-launch feature rating held at 3.02, and engagement metrics like request volume and active users trended upward. This suggests that the features sparked strong engagement, even as they surfaced some usability gaps worth refining.
 
-## 7. Limitations
+## 6. Limitations
 * Retention window limited to 6 weeks
 * Feedback volume could be biased toward active users
 * No control group for performance benchmarking
 
-## 8. Recommendations
+## 7. Recommendations
 * Scale infrastructure if launching multiple features simultaneously
 * Prioritize support readiness for visual-heavy features like Custom Themes
 * Consider A/B testing for future launches to isolate impact
